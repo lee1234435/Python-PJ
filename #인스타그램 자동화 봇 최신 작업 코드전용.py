@@ -24,7 +24,7 @@ chrome_options = Options()
 chrome_options.add_experimental_option("detach", True)
 chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
-service = Service(executable_path = 'C:/Users/이승호/Desktop/chromedriver-win64/chromedriver.exe')
+service = Service(executable_path = '크롬 드라이버 설치 경로 입력')
 driver = webdriver.Chrome(service = service, options = chrome_options)
 driver.implicitly_wait(1)
 driver.maximize_window()
